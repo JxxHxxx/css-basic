@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모 자식 선택자</title>
+    <style>
+        /* 부모 -> 모든 자손  */
+        ul li {
+            color:red;
+        }
+        /* /ol 하위에 있는 모든 li에 해당 CSS가 적용됨 */
+        /* 부모 -> 바로 아래 자식만 */
+        /* ol li {
+            border: 1px solid blue;  
+        } */
+        /* >를 사용하면 ol 바로 밑에 있는 태그에만 적요된다. */
+        ol>li {
+            border: 1px solid red;
+        }
+        ul, ol {
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS
+            <ul>
+                <li>selector</li>
+                <li>declaration</li>
+            </ul>
+        </li>
+        <li>JavaScript</li>
+    </ol>
+</body>
+</html>

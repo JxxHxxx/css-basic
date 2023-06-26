@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id 선택자</title>
+    <style>
+        li {
+            color:red;
+            text-decoration:underline;
+        }
+        /* id 선택자는 # 과 매핑된다. */
+        #select {
+            font-size:100px;
+        }
+        /* class 선택자는 . 과 매핑된ㄷ. */
+        .deactive{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h2 class="deactive">class 선택자는 다른 태그들과도 함께 사용할 수 있다.</h2>
+        <li class="deactive">HTML</li>
+        <!-- id 선택자 - 특정 선택자만 CSS를 줄 수 있음 id 는 고유해야 한다. 약속임  -->
+        <li id="select">CSS</li>
+        <li class="deactive">JavaScript</li>
+    </ul>
+</body>
+</html>
