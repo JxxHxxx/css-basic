@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo1</title>
+    <!-- 스타일 상태는 가장 마지막에 정의된 것을 우선함  -->
+    <style>
+        a:link {
+            color: blue;
+        }
+        /* 방문함을 의미하는 가상클래스선택자 */ 
+        a:visited {
+            color: red;
+        }
+        /* 마우스를 클릭하면 효과 발동 */
+        a:active {
+            color:green;
+        }
+        /*마우스를 가져다 대면 효과 발동 hover(롤오버)는 마우스 포인터가 올라갔을 때 발동되는 전환 효과를 의미함*/ 
+        a:hover {
+            color: black;
+        }
+        /* 링크에 마우스를 올리고 탭키를 누르면 해당 영역이 white로 변경되면서 포커싱되는 것을 볼 수 있다. */
+        /* 포커스는 가장 마지막에 두는게 좋다고 함*/
+        input:focus {
+            background-color:black;
+            color:white;
+        }
+        a:focus {
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://jxxhxxxmldiary.tistory.com">내 티스토리</a>
+    <a href="https://github.com/JxxHxxx">내 깃헙</a>
+    <input type="text">
+</body>
+</html>
